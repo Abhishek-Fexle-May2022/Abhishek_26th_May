@@ -20,7 +20,7 @@ public class StudentInfo {
         student.State__c = 'Madhya Pradesh' ;
         student.Indian_Student__c = true;
         student.Bank_Account_Number__c = '7894563217';
-        INSERT student;
+        insert student;
         
     } 
 
