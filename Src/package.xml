@@ -114,25 +114,6 @@
 		<members>Student__c.Teacher</members>
 		<name>RecordType</name>
 	</types>
-	<types>
-		<members>StudentDebugQuery</members>
-		<members>StudentInfo</members>
-		<name>ApexClass</name>
-	</types>
-	<types>
-		<members>Student__c</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
-		<members>Student__c</members>
-		<name>CustomTab</name>
-	</types>
-	<types>
-		<members>Student__c.Registrar</members>
-		<members>Student__c.Student</members>
-		<members>Student__c.Teacher</members>
-		<name>RecordType</name>
-	</types>
 	<version>53.0</version>
 </Package>
     <version>53.0</version>
