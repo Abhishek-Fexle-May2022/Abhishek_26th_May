@@ -130,6 +130,10 @@
         <name>CustomObject</name>
     </types>
 	<version>53.0</version>
+	<types>
+		<members>DifferentTypesOfDataAndMethods</members>
+		<name>ApexClass</name>
+	</types>
 </Package>
     <version>53.0</version>
 </Package>
