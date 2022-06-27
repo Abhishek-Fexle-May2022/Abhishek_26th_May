@@ -159,6 +159,42 @@ public with sharing class ExpressionAndOperators {
         x--;
         system.debug(x);
     }
+    // Bitwise AND operator
+    public static void bitwiseAndOperator(){
+        Integer x=56;
+        Integer y=10;
+        Integer result = x & y;
+        system.debug(result);
+        
+    }
 
+    // Bitwise OR operator
+    public static void bitwiseOrOperator(){
+        Integer x=56;
+        Integer y=10;
+        Integer result = x | y;
+        system.debug(result);
+        
+    }
+
+    // Bitwise Not or Complement operator
+    public static void bitwiseNotOperator(){
+        Integer x = 1;
+        system.debug(~x);
+
+    }
+
+    // safe navigation operator
+
+    public static void safeNavigationOperator(){
+        string str1;
+        system.debug(str1?.toLowerCase());
+
+    }
+
+    public static void safeNavigationOperator_1(){
+        String student1 =[SELECT City__c  FROM Student__c WHERE Name = 'Abhishek Pawar' ]?.City__c;
+        system.debug(student1);
+    }
 
 }
