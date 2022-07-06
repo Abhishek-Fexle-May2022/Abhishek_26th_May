@@ -129,7 +129,6 @@
         <members>Book__c</members>
         <name>CustomObject</name>
     </types>
-	<version>53.0</version>
 	<types>
 		<members>DifferentTypesOfDataAndMethods</members>
 		<name>ApexClass</name>
@@ -160,6 +159,11 @@
 		<members>SuperClass</members>
 		<members>SuperSubClass</members>
 		<name>ApexClass</name>
+    </types>
+	<types>
+        <members>CountryStateDistrictMapClass</members>
+        <members>SobjectInsertUpdateClass</members>
+        <name>ApexClass</name>
     </types>
     <version>53.0</version>
 </Package>
