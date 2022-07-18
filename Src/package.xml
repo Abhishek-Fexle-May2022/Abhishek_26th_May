@@ -183,5 +183,11 @@
 		<members>State__c</members>
 		<name>CustomObject</name>
 	</types>
+	<types>
+		<members>Country__c</members>
+		<members>District__c</members>
+		<members>State__c</members>
+		<name>CustomTab</name>
+	</types>
     <version>53.0</version>
 </Package>

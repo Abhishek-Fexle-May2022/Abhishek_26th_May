@@ -73,6 +73,29 @@ public with sharing class MapProcessOfCountryStateDistrict {
         } 
     }
 
+    // Find length of district greter then given length using mapOfCountry
+    public void districtLength() {
+        try {
+            // get district from mapOfCountry 
+            if (mapOfCountry != null) {
+                for(String countryName : mapOfCountry.keySet()) {
+                    Map<String,List<String>> mapOfState = mapOfCountry.get(countryName);
+                    if (mapOfState !=null) {
+                        for (String stateName : mapOfState.keySet()) {
+                            for(String districtLength : mapOfState.get(stateName)) {
+                                if(districtLength.length() > 8) {
+                                    system.debug('district length greter then given length :' + districtLength);
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        } catch (DmlException e) {
+            system.debug('The following exception has occurred: ' + e.getMessage());
+        }
+    }
+
     // Creating wrapper class
     public class Districts {
         Public String districtName{get; set;}
