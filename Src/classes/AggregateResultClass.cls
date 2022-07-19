@@ -1,6 +1,6 @@
 public with sharing class AggregateResultClass {
 
-    // In this constructor i am filling total state , total district feild in country object and total district feild oin state object 
+    // In this constructor we can fill total state , total district feild in country object and total district feild on state object 
     public AggregateResultClass() {
         try {
             //  fill total state on countrty object 

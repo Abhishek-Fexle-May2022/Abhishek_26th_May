@@ -2,9 +2,10 @@ public with sharing class MapProcessOfCountryStateDistrict {
 
     Map<String, Map<String, List<String>>> mapOfCountry = new Map<String, Map<String, List<String>>>();
 
-    // Fill cuntry state map all data in mapOfCountry using query 
+    // Make Constructor and fill the Map dynamically 
     public MapProcessOfCountryStateDistrict() {
         try {
+            // Use SOQL Queries and get data using SOQL Queries
             List<District__c> districtList = [SELECT Name, State__r.Name, State__r.Country__r.Name FROM District__c ];
             if(districtList.size() > 0) {
                 for (District__c district : districtList) {
@@ -29,7 +30,7 @@ public with sharing class MapProcessOfCountryStateDistrict {
         }
     }
 
-    //In this method i am  Finding country name , state name , district with given charecter
+    //In this method we can  Find country name , state name , district with given charecter Which start with a particular String 'M'
     public static void findDistrictLength(String startingCharector) {
         try {
             Map<String, Map<String, List<String>>> mapOfCountryFind = new Map<String, Map<String, List<String>>>();
@@ -58,7 +59,7 @@ public with sharing class MapProcessOfCountryStateDistrict {
         }
     }
     
-    // Find all district length greter then given length Using Query
+    // In this method we can find all district length greter then given length Using SOQL Query
     public static void lengthOfDistrict (Integer length) {
         try {
             List<District__c> allDistrictList = [SELECT Name FROM District__c];
@@ -74,7 +75,7 @@ public with sharing class MapProcessOfCountryStateDistrict {
         } 
     }
 
-    // Find length of district greter then given length using mapOfCountry
+    // In this method we can find length of district greter then given length using mapOfCountry with dynamic method 
     public void districtLength() {
         try {
             // get district from mapOfCountry 
@@ -97,7 +98,7 @@ public with sharing class MapProcessOfCountryStateDistrict {
         }
     }
 
-    // In this method i am creating the  jason data and serialize country data 
+    // In this method we can create the json data and serialize country data 
     Country countries = new Country();
     public void CountryJSONGenerator(String countryName, String countryCode) {
         try {
@@ -140,7 +141,7 @@ public with sharing class MapProcessOfCountryStateDistrict {
         }
     }
 
-    // Creating wrapper class for country state district data 
+    // Create wrapper class for country state district data 
     public class Districts {
         Public String districtName{get; set;}
     }
